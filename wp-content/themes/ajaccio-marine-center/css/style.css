@@ -200,7 +200,7 @@ header nav ul li {
   position: relative;
   display: inline-block;
   text-align: center;
-  padding: 22px 0 21px 0;
+  padding: 32px 0 32px 0;
 }
 header nav ul li a {
   display: block;
@@ -378,7 +378,7 @@ header .current_page_item:after {
 #equipe article {
   position: relative;
   display: inline-block;
-  width: 48%;
+  width: 47%;
   vertical-align: top;
 }
 #equipe article img {

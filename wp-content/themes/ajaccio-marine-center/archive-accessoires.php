@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
+<?php $terms = get_terms('contrats');?>
 <section id="choixBateaux">
+	<p>Filtrer par :</p>
+
 	<article>
 		<ul>
 

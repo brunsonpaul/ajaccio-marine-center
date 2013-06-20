@@ -6,6 +6,7 @@
 	<?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>	
 
+	
 	<article>
 		<div class="descriptionScroll">
 			<h1><?php the_title(); ?></h1>
