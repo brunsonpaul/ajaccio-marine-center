@@ -1,0 +1,9 @@
+#services {
+  margin: 180px 70px 0 70px;
+  min-width: 980px;
+}
+#services article img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}

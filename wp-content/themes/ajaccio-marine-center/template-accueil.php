@@ -34,9 +34,9 @@
 		
 	</ul>
 	<div id="cbp-bicontrols" class="cbp-bicontrols">
-		<span class="cbp-biprev icon-arrow-left"></span>
-		<span id="run-stop" class="cbp-bipause icon-play"></span>
-		<span class="cbp-binext icon-arrow-right"></span>
+	    <span class="cbp-biprev"><img src="<?php bloginfo('template_directory'); ?>/img/default/fleche_gauche.svg"></span>
+		<span id="run-stop" class="cbp-bipause play"><img src="<?php bloginfo('template_directory'); ?>/img/default/pause.svg"></span>
+		<span class="cbp-binext"><img src="<?php bloginfo('template_directory'); ?>/img/default/fleche_droite.svg"></span>
 	</div>
 </div>
 	
@@ -48,21 +48,20 @@
 	$(function() {
 		cbpBGSlideshow.init();
 	});
-
-
 	$(document).ready(function(){
-
 		runStop();
 	});
 	function runStop(){
 		$("#run-stop").click(function(){
-			if ($("#run-stop").hasClass("icon-play")) {
-				$("#run-stop").toggleClass("icon-play");
-				$("#run-stop").addClass("icon-pause");
+			if ($("#run-stop").hasClass("play")) {
+				$("#run-stop img").attr('src', "<?php bloginfo('template_directory'); ?>/img/default/play.svg")
+				$("#run-stop").toggleClass("play");
+				$("#run-stop").addClass("pause");
 			}
-			else if ($("#run-stop").hasClass("icon-pause")) {
-				$("#run-stop").toggleClass("icon-pause");
-				$("#run-stop").addClass("icon-play");
+			else if ($("#run-stop").hasClass("pause")) {
+				$("#run-stop img").attr('src', "<?php bloginfo('template_directory'); ?>/img/default/pause.svg")
+				$("#run-stop").toggleClass("pause");
+				$("#run-stop").addClass("play");
 			}
 		});
 	}

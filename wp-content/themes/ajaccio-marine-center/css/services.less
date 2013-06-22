@@ -1,0 +1,10 @@
+#services { margin:180px 70px 0 70px;  min-width:980px;
+	article { position:relative; display:block; float:left; margin-right:5%; .calcWidthKit(30%); vertical-align:top;
+		img { display:inline-block; width:20%; height:auto; .borderRadius(50%); }
+		h1 { float:right; display:inline-block; .novecentowideLight(); .fontSize30(); color:@colorOrange; vertical-align:top; }
+		p { .fontSize12(); color:@colorGray; margin-bottom:30px; text-align:justify; line-height:18px;
+			&:before { content:''; display:block; height:1px; width:40px; background:@colorOrange; margin:30px 0; }
+		}
+		&:nth-of-type(3n){ margin:0; }
+	}
+}
