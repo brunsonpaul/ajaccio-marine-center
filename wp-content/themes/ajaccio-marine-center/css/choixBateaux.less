@@ -1,3 +1,5 @@
+/**
+
 #choixBateaux { margin:0; padding:0; font-size:0; overflow:hidden;
 	article { position:fixed; top:0; left:0; bottom:0; right:0;
 		ul { width:100%; font-size:0; 
@@ -11,4 +13,20 @@
 			}
 		}
 	}	
+}**/
+
+#choixBateaux { margin:180px 70px 0 70px;  min-width:980px;
+	article { position:relative; display:block; width:48%; float:left; vertical-align:top; margin-bottom:30px;
+		img { display:inline-block; width:35%; height:auto; .borderRadius(50%); font-size:0; vertical-align:top; }
+		.mini-description { display:inline-block; margin-left:5%; width:60%; font-size:0; vertical-align:top; 
+			h1 { .novecentowideLight(); .fontSize20(); color:@colorOrange; }
+			p { .fontSize12(); color:@colorGray; text-align:justify; line-height:18px; 
+				&:before { content:''; display:block; height:1px; width:40px; background:@colorOrange; margin:30px 0; }
+			}
+			 a { display:inline-block; margin:15px auto 0 auto; color:@colorOrange; .novecentowideLight(); .fontSize14(); border:1px solid @colorOrange; padding:10px 20px; 
+				&:hover { background:@colorOrange; color:@colorWhite; }
+			 }
+		}
+		&:nth-of-type(2n) { margin-left:4%; }
+	}
 }
