@@ -30,58 +30,12 @@
 							</ul>
 						<?php endif; ?>
     				<?php endwhile; ?>
-
-			
-
 				</div>
 			</article>
 
 		<?php endwhile; ?>
-	<?php endif; ?>			
-
-
-	
-
-	<!--
-	<article>
-			<h1><?php the_title(); ?></h1>
-			<p><?php the_content(); ?></p>
-			<dl>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-				<dt>Chantier</dt><dd>CBN Lagoon</dd>
-			</dl>
-
-			<ul>
-				<li>
-					<a href="#">
-						<img src="<?php bloginfo('template_directory'); ?>/img/bateau.jpg" alt=""/>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="<?php bloginfo('template_directory'); ?>/img/bateau.jpg" alt=""/>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="<?php bloginfo('template_directory'); ?>/img/bateau.jpg" alt=""/>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="<?php bloginfo('template_directory'); ?>/img/bateau.jpg" alt=""/>
-					</a>
-				</li>
-			<ul>	
-		</div>
-	</article>!-->
-
-
+	<?php endif; ?>
+				
 	<div id="slideShowBG">
 		
 	</div>
