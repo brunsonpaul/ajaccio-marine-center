@@ -617,6 +617,7 @@ header .current_page_item:after {
   width: -o-calc(30%);
   width: calc(30%);
   vertical-align: top;
+  font-size: 0;
 }
 #services article img {
   display: inline-block;
@@ -629,8 +630,9 @@ header .current_page_item:after {
   border-radius: 50%;
 }
 #services article h1 {
-  float: right;
   display: inline-block;
+  width: 70%;
+  margin-left: 10%;
   font-family: 'NovecentowideLightRegular';
   font-size: 30px;
   font-size: 1.875rem;
@@ -674,6 +676,7 @@ header .current_page_item:after {
   float: left;
   vertical-align: top;
   margin-bottom: 30px;
+  font-size: 0;
 }
 #choixBateaux article img {
   display: inline-block;
@@ -684,14 +687,12 @@ header .current_page_item:after {
   -ms-border-radius: 50%;
   -khtml-border-radius: 50%;
   border-radius: 50%;
-  font-size: 0;
   vertical-align: top;
 }
 #choixBateaux article .mini-description {
   display: inline-block;
   margin-left: 5%;
   width: 60%;
-  font-size: 0;
   vertical-align: top;
 }
 #choixBateaux article .mini-description h2 {
@@ -816,13 +817,19 @@ header .current_page_item:after {
   margin-right: 14px;
 }
 #descriptionBateaux #slideShowBG {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   width: 70%;
   bottom: 0;
   right: 0;
-  background: red;
+}
+#descriptionBateaux #slideShowBG img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
 #descriptionBateaux ::-webkit-scrollbar {
   width: 1px;

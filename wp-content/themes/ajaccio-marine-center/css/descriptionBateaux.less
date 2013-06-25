@@ -18,7 +18,9 @@
 			}
 		}
 	}
-	#slideShowBG { position:absolute; z-index:-1; top:0; width:70%; bottom:0; right:0; background:red; }
+	#slideShowBG { position:fixed; z-index:-1; top:0; width:70%; bottom:0; right:0; 
+		img { display:block; position:absolute; bottom:0; width:100%; height:auto; }
+	}
 }
 #descriptionBateaux ::-webkit-scrollbar { width:1px; }
 #descriptionBateaux ::-webkit-scrollbar-track { background:@colorOrangeLight; } 
