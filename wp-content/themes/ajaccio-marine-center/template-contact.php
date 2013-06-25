@@ -25,7 +25,7 @@
 	<?php endif; ?>
 </section>
 <div id="map">
-	<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=1+Rue+Lefebvre+paris&amp;aq=t&amp;sll=48.680793,2.502588&amp;sspn=2.194254,4.938354&amp;ie=UTF8&amp;hq=&amp;hnear=1+Rue+Lefebvre,+75015+Paris,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;ll=48.8318,2.292436&amp;output=embed"></iframe>
+	<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+	src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=27+Rue+Sergent+Casalonga+20000+Ajaccio+France&amp;aq=t&amp;sll=41.92010270,8.735249399999999&amp;ie=UTF8&amp;hq=&amp;hnear=27+Rue+Sergent+Casalonga+20000+Ajaccio+France&amp;t=m&amp;z=17&amp;ll=41.92010270,8.735249399999999&amp;output=embed"></iframe>
 </div>
-
 <?php get_footer(); ?>
