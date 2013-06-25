@@ -17,39 +17,6 @@ register_nav_menus( array(
 
 
 
-  $labels = array(
-    'name'                       => _x( 'Catégorie', 'taxonomy general name' ),
-    'singular_name'              => _x( 'Catégorie', 'taxonomy singular name' ),
-    'search_items'               => __( 'Rechercher une catégorie' ),
-    'popular_items'              => __( 'Catégories populaires' ),
-    'all_items'                  => __( 'Toutes les catégories' ),
-    'parent_item'                => null,
-    'parent_item_colon'          => null,
-    'edit_item'                  => __( 'Editer la catégorie' ),
-    'update_item'                => __( 'Mettre à jour la catégorie' ),
-    'add_new_item'               => __( 'Ajouter une catégorie' ),
-    'new_item_name'              => __( 'Nom de la catégorie' ),
-    'separate_items_with_commas' => __( 'Séprarer les catégories avec des virgules' ),
-    'add_or_remove_items'        => __( 'Ajouter / supprimer une catégorie' ),
-    'choose_from_most_used'      => __( 'Choisir la catégorie la plus vue' ),
-    'not_found'                  => __( 'Aucune catégorie trouvée.' ),
-    'menu_name'                  => __( 'Catégories' ),
-  );
-
-  $args = array(
-    'hierarchical'          => true,
-    'labels'                => $labels,
-    'show_ui'               => true,
-    'show_admin_column'     => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var'             => true,
-    'rewrite'               => array( 'slug' => 'categories' ),
-  );
-
-  register_taxonomy( 'categories', array('bateaux_neufs','locations','accessoires','bateaux_occasions'), $args );
-
-
-
 
 
 
