@@ -10,6 +10,7 @@
 				<?php the_post_thumbnail(); ?>
 				<div class="mini-description">
 					<h2><?php the_title(); ?></h2>
+					<span><?php the_field('type_de_bateau') ?></span>
 					<p><?php the_field('petite_description') ?></p>
 					<a href="<?php the_permalink();?>">Plus de détails</a>
 				</div>

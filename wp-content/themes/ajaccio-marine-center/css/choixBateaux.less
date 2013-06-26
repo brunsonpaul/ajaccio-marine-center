@@ -1,11 +1,13 @@
 #choixBateaux { margin:180px 70px 0 70px;  min-width:980px;
 	h1 { .novecentowideLight(); .fontSize30(); color:@colorOrange; margin-bottom:40px; }
-	article { position:relative; display:block; width:48%; float:left; vertical-align:top; margin-bottom:30px; font-size:0;
+	article { position:relative; display:block; width:48%; float:left; vertical-align:top; margin-bottom:50px; font-size:0;
 		img { display:inline-block; width:35%; height:auto; .borderRadius(50%); vertical-align:top; }
 		.mini-description { display:inline-block; margin-left:5%; width:60%; vertical-align:top; 
-			h2 { .novecentowideLight(); .fontSize20(); color:@colorOrange; }
+			h2 { .novecentowideLight(); .fontSize20(); color:@colorOrange;
+				&:after { content:''; display:block; height:1px; width:40px; background:@colorOrange; margin:30px 0; }
+			}
+			span { margin-bottom:10px; display:block; color:@colorOrange; .fontSize14();  .novecentowideLight(); .textUppercase(); }
 			p { .fontSize12(); color:@colorGray; text-align:justify; line-height:18px; 
-				&:before { content:''; display:block; height:1px; width:40px; background:@colorOrange; margin:30px 0; }
 			}
 			 a { display:inline-block; margin:15px auto 0 auto; color:@colorOrange; .novecentowideLight(); .fontSize14(); border:1px solid @colorOrange; padding:10px 20px; 
 				&:hover { background:@colorOrange; color:@colorWhite; }

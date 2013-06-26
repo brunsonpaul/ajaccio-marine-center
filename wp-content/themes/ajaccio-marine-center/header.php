@@ -50,3 +50,15 @@
 	        </ul>
 	    </nav>
 	</header>
+
+<?php $current='';
+	if ( is_archive() ) { $current = 'menu-item-221'; }
+	elseif ( is_single() ) { $current = 'menu-item-221'; }
+?>
+
+<style type="text/css">
+	#<?php echo $current; ?> > :after { content: ""; display:block; position:absolute; margin-left:-7px; left:50%; top:77px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid #fff; }
+</style>
+
+
+

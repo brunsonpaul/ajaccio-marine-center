@@ -10,6 +10,7 @@
 		    <article>
 		    	<div class="descriptionScroll">
 					<h1><?php the_title(); ?></h1>
+					<span><?php the_field('type_de_bateau') ?></span>
 					<p><?php the_field('grande_description') ?></p>
 			
 					<?php while(has_sub_field("fiche_technique")): ?>

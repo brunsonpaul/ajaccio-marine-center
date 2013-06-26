@@ -10,14 +10,13 @@ header { z-index:999; position:absolute; left:0; top:50px; width:85%; min-width:
 					em { display:block; .fontSize20(); .novecentowideLight(); margin-bottom:2px; .textUppercase(); }
 				}
 				&:hover .sub-menu { display:block; }
-				.sub-menu { display:none; position:absolute; top:83px; text-align:center; width:803px; margin-left:-401px; left:50%;
+				.sub-menu { display:none; position:absolute; top:83px; text-align:center; width:805px; margin-left:-402px; left:50%;
 					li { padding:0; .novecentowideLight(); .fontSize16(); float:left; border-bottom:1px solid @colorOrangeLight; border-left:1px solid @colorOrangeLight; background:@colorWhite;
 						a { display:block; padding:10px 0; width:200px; margin:0; color:@colorOrange; 
 							&:hover { color:@colorWhite; background:@colorOrangeLight; }
 						}
 						&:nth-of-type(1) { border-left:none; }
 					}
-					&:before { content: ""; z-index:99; display:block; position:absolute; margin-left:-6px; left:50%; top:0px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid @colorOrange; }
 				}
 				.current_page_item a { color:@colorWhite !important; background:@colorOrangeLight !important; }
 				.current_page_item:after { content: ""; display:none; }				
@@ -25,6 +24,9 @@ header { z-index:999; position:absolute; left:0; top:50px; width:85%; min-width:
 		}
 	}
 	.current_page_item:after { content: ""; display:block; position:absolute; margin-left:-3px; left:50%; top:77px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid @colorWhite; }
+}
+.sub-menu {
+	.current-menu-item a { background:@colorOrangeLight !important; color:@colorWhite !important; }
 }
 
  

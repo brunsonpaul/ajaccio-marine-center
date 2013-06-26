@@ -2,24 +2,24 @@
 	article { position:fixed; top:0; left:0; bottom:0; padding:15% 70px 70px 70px; .calcWidthKit(27%); background:@colorWhite;
 		.descriptionScroll { overflow-y:scroll; height:100%; padding-right:20px;
 			h1 { .novecentowideLight(); .fontSize30(); color:@colorOrange; margin-bottom:20px; }
+			span { margin-bottom:10px; display:block; color:@colorOrange; .fontSize14();  .novecentowideLight(); .textUppercase(); }
 			p { .baskervilleRegular(); .fontSize12(); text-align:justify; line-height:18px; margin-bottom:20px; }
 			dl { margin-top:5px; display:block; font-size:0;
 				dt { display:inline-block; width:50%; .fontSize12(); }
 				dd { display:inline-block; width:50%; .fontSize12(); }
 			}
-			ul { font-size:0; margin-top:20px;
-				li { display:inline-block; font-size:1rem; .calcWidthKit(50%-5); margin-bottom:10px; 
-					a { width:100%; display:block;
-						img { display:block; width:100%; height:auto; vertical-align:top; border:2px solid transparent; }
-						&:hover img { border:2px solid @colorOrange; }
+			ul { font-size:0; margin-top:20px; font-size:0; background:green;
+				li { float:left; font-size:1rem; width:45%; margin-bottom:10px; margin:0 2.5%; 
+					a { width:100%; display:block; border:2px solid transparent;
+						img { display:block; width:100%; height:auto; vertical-align:top;  }
+						&:hover { border:2px solid @colorOrange; }
 					}
-					&:nth-of-type(2n-1) { margin-right:14px; }
 				}
 			}
 		}
 	}
 	#slideShowBG { position:fixed; z-index:-1; top:0; width:70%; bottom:0; right:0; 
-		img { display:block; position:absolute; bottom:0; width:100%; height:auto; }
+		img { display:block; position:absolute; bottom:0; right:0; height:100%; width:auto; }
 	}
 }
 #descriptionBateaux ::-webkit-scrollbar { width:1px; }
